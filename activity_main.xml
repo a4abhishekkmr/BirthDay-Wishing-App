@@ -18,7 +18,7 @@
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/NameInput"
+        android:id="@+id/NameInputt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -40,6 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:textAllCaps="false"
         android:padding="20dp"
+        android:onClick="createWishingpage"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NameInput" />
+        app:layout_constraintTop_toBottomOf="@+id/NameInputt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
