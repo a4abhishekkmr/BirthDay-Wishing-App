@@ -4,21 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="120dp"
+    android:layout_marginTop="0dp"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/again"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/HelperMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enter_the_name"
+        android:layout_margin="90dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/NameInputt"
+        android:id="@+id/nameInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -32,15 +40,15 @@
         app:layout_constraintTop_toBottomOf="@+id/HelperMessage" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/createBirthdayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="280dp"
         android:text="@string/create_birthday_card"
         app:layout_constraintEnd_toEndOf="parent"
         android:textAllCaps="false"
-        android:padding="20dp"
-        android:onClick="createWishingpage"
+        android:padding="1dp"
+        android:onClick="callingFunction"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NameInputt" />
+        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>
